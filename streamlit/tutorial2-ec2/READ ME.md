@@ -34,12 +34,11 @@ STEPS:
  
  2.4) Run PuTTY
  
- 2.5) In Session category: 
- 
-      in HOST NAME box goes  my-instance-user-name@my-instance-public-dns-name. (default instance user name is ubuntu)
-      in PORT box goes 22
-      in connection type SSH
-      more info:  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs.html#connection-prereqs-get-info-about-instance
+ 2.5) In Session category: \
+      in HOST NAME box goes  my-instance-user-name@my-instance-public-dns-name. (default instance user name is ubuntu)\
+      in PORT box goes 22\
+      in connection type SSH\
+      more info:  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs.html#connection-prereqs-get-info-about-instance\
       
  2.6)In Connection/SSH/Auth category:
       browse for the .ppk key and open
