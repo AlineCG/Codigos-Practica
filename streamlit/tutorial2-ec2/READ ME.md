@@ -12,7 +12,7 @@ Main idea: To Create a EC2 server (virtual machine) to run our streamlit web app
 STEPS:
 
 
-# STEP 1 tutorial 1 (CREATE EC2 Instance)
+#### STEP 1: tutorial 1 (CREATE EC2 Instance)
 
 1) Go to AWS Console select EC2 and launch instance.
  
@@ -20,43 +20,43 @@ STEPS:
  
 3) Add custom TCP with port range 8501, click review and launch
  
-&emsp; 1.4) Create a new key pair, add new name and download .pem file (KEEP IN SECURE LOCATION)
+4) Create a new key pair, add new name and download .pem file (KEEP IN SECURE LOCATION)
  
-&emsp; 1.5) Launch instance
+5) Launch instance
 
-#STEP 2: Tutorial 2 (connecting with SSH to EC2)
+#### STEP 2: Tutorial 2 (connecting with SSH to EC2)
 
 1) Download PuTTY
  
-&emsp; 2.2) Run PuTTYgen software, select RSA and then click load, choose the .pem file click OPEN and OK.
+2) Run PuTTYgen software, select RSA and then click load, choose the .pem file click OPEN and OK.
  
-&emsp; 2.3) click Save Private Key, yes, add new name and Save.
+3) click Save Private Key, yes, add new name and Save.
  
 &emsp; Now We have the .ppk key
  
-&emsp; 2.4) Run PuTTY
+4) Run PuTTY
  
-&emsp; 2.5) In Session category: \
+5) In Session category: \
 &emsp;&emsp;      in HOST NAME box goes  my-instance-user-name@my-instance-public-dns-name. (default instance user name is ubuntu)\
 &emsp;&emsp;      in PORT box goes 22\
 &emsp;&emsp;      in connection type SSH\
 &emsp;&emsp;      more info:  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs.html#connection-prereqs-get-info-about-instance \
  \     
- &emsp; 2.6)In Connection/SSH/Auth category:\
+6) In Connection/SSH/Auth category:\
  &emsp;&emsp;     browse for the .ppk key and open
  
- &emsp; 2.7) click open and we are connected to the EC2 instance (virtual machine)
+7) click open and we are connected to the EC2 instance (virtual machine)
  
- &emsp; 2.8) to send file from our computer to ec2 instance, in cmd run:\
+8) to send file from our computer to ec2 instance, in cmd run:\
  &emsp;&emsp; 	pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt
       
-3) TUTORIAL 1 (run streamlit in the background)
-3.1) sudo apt-get update
-3.2) pip install streamlit and run: streamlit helloworld.py
-3.3) sudo apt-get install tmux
-3.4)tmux new -s StreamSession
-3.5)streamlit helloworld.py will be running in the StreamSession 
-3.6) ctrl+B then D (not simultaneously) now the session is detatched and we can disconnect without killing it.
+#### STEP 3: TUTORIAL 1 (run streamlit in the background)
+1) sudo apt-get update\
+2) pip install streamlit and run: streamlit helloworld.py\
+3) sudo apt-get install tmux\
+4)tmux new -s StreamSession\
+5)streamlit helloworld.py will be running in the StreamSession\ 
+6) ctrl+B then D (not simultaneously) now the session is detatched and we can disconnect without killing it.\
 
 
 
