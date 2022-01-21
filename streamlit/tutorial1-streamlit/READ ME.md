@@ -16,7 +16,5 @@ STEPS:
 2) streamlit hello
 3) streamlit run helloworld.py (and so on with all of the examples)
 4) ctrl + c to stop running
-
-The idea is to create web apps with python using streamlit library.
 	
 	
