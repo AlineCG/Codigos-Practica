@@ -14,9 +14,9 @@ STEPS:
 
 1) TUTORIAL 1 (CREATE EC2 Instance)
 
- *Tabspace*1.1) Go to AWS Console select EC2 and launch instance.
+&nbsp1.1) Go to AWS Console select EC2 and launch instance.
  
-*Tabspace*1.2) Select AMI (ubuntu 18.04 (free tier)), next until security group.
+&nbsp1.2) Select AMI (ubuntu 18.04 (free tier)), next until security group.
  
 *Tabspace* 1.3) Add custom TCP with port range 8501, click review and launch
  
