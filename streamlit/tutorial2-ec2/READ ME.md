@@ -12,7 +12,7 @@ Main idea: To Create a EC2 server (virtual machine) to run our streamlit web app
 STEPS:
 
 
-#### STEP 1: tutorial 1 (CREATE EC2 Instance)
+#### STEP 1: Tutorial 1 (CREATE EC2 Instance)
 
 1) Go to AWS Console select EC2 and launch instance.
  
@@ -50,7 +50,7 @@ STEPS:
 8) to send file from our computer to ec2 instance, in cmd run:\
  &emsp;&emsp; 	pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt
       
-#### STEP 3: TUTORIAL 1 (run streamlit in the background)
+#### STEP 3: Tutorial 1 (run streamlit in the background)
 1) sudo apt-get update
 
 2) pip install streamlit and run: streamlit helloworld.py
