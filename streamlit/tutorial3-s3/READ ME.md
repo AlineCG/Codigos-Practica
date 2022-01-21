@@ -31,7 +31,7 @@ STEPS:
  
 3) Access to Instance Terminal (via SSH) and run aws s3 ls  (sudo apt install awscli if its not installed)
 
-#### COMMANDS S3: \
+#### S3 COMMANDS: 
 https://docs.aws.amazon.com/es_es/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-listing-buckets \
 
 - aws s3 ls
@@ -59,7 +59,7 @@ https://docs.aws.amazon.com/es_es/cli/latest/userguide/cli-services-s3-commands.
  &emsp;&emsp; &emsp;&emsp; path='s3://Your_bucket_name/Your_file_name'
  &emsp;&emsp; &emsp;&emsp; df=pd.read_csv(path)
 
-note:(for adding files to ec2 instance)
+note: (for adding files to ec2 instance)\
 pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt 
 
 
