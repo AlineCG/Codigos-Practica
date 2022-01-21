@@ -54,8 +54,8 @@ STEPS:
 1) sudo apt-get update\
 2) pip install streamlit and run: streamlit helloworld.py\
 3) sudo apt-get install tmux\
-4)tmux new -s StreamSession\
-5)streamlit helloworld.py will be running in the StreamSession\ 
+4) tmux new -s StreamSession\
+5) streamlit helloworld.py will be running in the StreamSession\ 
 6) ctrl+B then D (not simultaneously) now the session is detatched and we can disconnect without killing it.\
 
 
