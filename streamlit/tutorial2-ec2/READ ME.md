@@ -14,7 +14,7 @@ STEPS:
 
 1) TUTORIAL 1 (CREATE EC2 Instance)
 
-&nbsp1.1) Go to AWS Console select EC2 and launch instance.
+ 1.1) Go to AWS Console select EC2 and launch instance.
  
 &nbsp1.2) Select AMI (ubuntu 18.04 (free tier)), next until security group.
  
