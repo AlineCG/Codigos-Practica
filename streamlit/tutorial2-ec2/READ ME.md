@@ -50,7 +50,14 @@ STEPS:
  &emsp; 2.8) to send file from our computer to ec2 instance, in cmd run:\
  &emsp;&emsp; 	pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt
       
-      
+3) TUTORIAL 1 (run streamlit in the background)
+3.1) sudo apt-get update
+3.2) pip install streamlit and run: streamlit helloworld.py
+3.3) sudo apt-get install tmux
+3.4)tmux new -s StreamSession
+3.5)streamlit helloworld.py will be running in the StreamSession 
+
+
       
 
 
