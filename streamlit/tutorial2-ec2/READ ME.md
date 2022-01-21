@@ -16,7 +16,7 @@ STEPS:
 
  1.1) Go to AWS Console select EC2 and launch instance.
  
-&nbsp1.2) Select AMI (ubuntu 18.04 (free tier)), next until security group.
+&emsp; 1.2) Select AMI (ubuntu 18.04 (free tier)), next until security group.
  
 *Tabspace* 1.3) Add custom TCP with port range 8501, click review and launch
  
