@@ -4,9 +4,10 @@ Tutorial 2:\
 Tutorial 2.1: SSH Connetion for windows (use PuTTY) \
 	https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
 <pre>      
-Main idea: Create a EC2 server (virtual machine) to run streamlit web app. \
-      We also use TMUX library for keeping the code running in the background.
+Main idea: To Create a EC2 server (virtual machine) to run our streamlit web app. 
+           We also use TMUX library for keeping the code running in the background.
 </pre>  
+
 STEPS:
 
 
