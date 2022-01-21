@@ -31,8 +31,10 @@ STEPS:
  
 3) Access to Instance Terminal (via SSH) and run aws s3 ls  (sudo apt install awscli if its not installed)
 
-#### commands S3: https://docs.aws.amazon.com/es_es/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-listing-buckets
- - aws s3 ls
+#### COMMANDS S3: \
+https://docs.aws.amazon.com/es_es/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-listing-buckets \
+
+- aws s3 ls
  - aws s3 ls s3://testbucket/ \
 &emsp;&emsp;	shows with  PRE all folders in bucket 
  - aws s3 ls s3://testbucket/testfolder/	 
@@ -46,33 +48,18 @@ STEPS:
   &emsp;&emsp; delete bucket or file
  
       
-#### STEP 3: Tutorial 1 (run streamlit in the background)
-1) sudo apt-get update
+#### STEP 3: Tutorial 3 (streamlit app access to bucket data)
+1)  pip3 install pandas \
+    pip3 install s3fs \
+    pip3 install boto3 
+2) add this lines in python code:
+ &emsp;&emsp; &emsp;&emsp; import pandas as pd
+ &emsp;&emsp; &emsp;&emsp; import boto3
+ &emsp;&emsp; &emsp;&emsp; client = boto3.client('s3')
+ &emsp;&emsp; &emsp;&emsp; path='s3://Your_bucket_name/Your_file_name'
+ &emsp;&emsp; &emsp;&emsp; df=pd.read_csv(path)
 
-2) pip install streamlit and run: streamlit helloworld.py
-
-3) sudo apt-get install tmux
-
-4) tmux new -s StreamSession
-
-5) streamlit helloworld.py will be running in the StreamSession
-
-6) ctrl+B then D (not simultaneously) now the session is detatched and we can disconnect without killing it.
-
-#### TMUX COMMANDS 
-
-*tmux new -s Session0* \
-*tmx detach* \
-*tmux list-sessions*   (para ver todas las sessiones) \
-*tmux attach -t Session0* \
-*tmux kill-session*    (para borrar todas las sesiones) 
-      
-#### STEP 4: (optional)  (connect AWS with computer)
-1) install awscli for windows
-2) run in cmd: aws configure \
-    AWS Access Key ID [None]: write private key \
-    AWS Secret Access Key [None]: write public key \
-    Default region name [None]: us-east-2 \
-    Default output format [None]: blank
+note:(for adding files to ec2 instance)
+pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt 
 
 
