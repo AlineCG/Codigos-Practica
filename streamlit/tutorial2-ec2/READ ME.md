@@ -48,7 +48,8 @@ STEPS:
 7) click open and we are connected to the EC2 instance (virtual machine)
  
 8) to send file from our computer to ec2 instance, in cmd run:\
- &emsp;&emsp; 	pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt
+ &emsp;	pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt
+ &emsp; might need step 4     
       
 #### STEP 3: Tutorial 1 (run streamlit in the background)
 1) sudo apt-get update
@@ -71,7 +72,7 @@ STEPS:
 *tmux attach -t Session0* \
 *tmux kill-session*    (para borrar todas las sesiones) 
       
-#### EXTRA STEP  (connect AWS with computer)
+#### STEP 4: (optional)  (connect AWS with computer)
 1) install awscli for windows
 2) run in cmd: aws configure \
     AWS Access Key ID [None]: write private key \
