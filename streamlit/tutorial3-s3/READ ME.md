@@ -23,13 +23,15 @@ STEPS:
  
 2) Create name for the bucket that is unique in all internet then click create
 
+3) Add any file (ex: footbal_data.csv)
+
 #### STEP 2: Tutorial 2 (connecting S3 to EC2)
 
 1) Go to IAM, create a new role for EC2, policy: S3FullAccess.
  
 2) GO to instances, select the instance, actions, security, modify role for the one created before. 
  
-3) Access to Instance Terminal (via SSH) and run aws s3 ls  
+3) Access to Instance Terminal (via SSH) and run aws s3 ls  \
  &emsp;&emsp;    (sudo apt install awscli if its not installed)
  
       
@@ -38,11 +40,11 @@ STEPS:
     pip3 install s3fs \
     pip3 install boto3 
 2) add this lines in python code:
- &emsp;&emsp; &emsp;&emsp; import pandas as pd
- &emsp;&emsp; &emsp;&emsp; import boto3
- &emsp;&emsp; &emsp;&emsp; client = boto3.client('s3')
- &emsp;&emsp; &emsp;&emsp; path='s3://Your_bucket_name/Your_file_name'
- &emsp;&emsp; &emsp;&emsp; df=pd.read_csv(path)
+ &emsp;&emsp; &emsp;&emsp; import pandas as pd \
+ &emsp;&emsp; &emsp;&emsp; import boto3 \
+ &emsp;&emsp; &emsp;&emsp; client = boto3.client('s3') \
+ &emsp;&emsp; &emsp;&emsp; path='s3://Your_bucket_name/Your_file_name' \
+ &emsp;&emsp; &emsp;&emsp; df=pd.read_csv(path) 
 
 
 #### S3 COMMANDS: 
