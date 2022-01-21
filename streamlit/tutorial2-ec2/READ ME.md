@@ -48,7 +48,7 @@ STEPS:
 7) click open and we are connected to the EC2 instance (virtual machine)
  
 8) to send file from our computer to ec2 instance, in cmd run:\
- &emsp;	pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt
+ &emsp;	pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt \
  &emsp; might need step 4     
       
 #### STEP 3: Tutorial 1 (run streamlit in the background)
