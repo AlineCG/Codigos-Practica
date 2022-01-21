@@ -29,7 +29,21 @@ STEPS:
  
 2) GO to instances, select the instance, actions, security, modify role for the one created before. 
  
-3) Access to Instance Terminal (via SSH) and run aws s3 ls  (sudo apt install awscli if its not installed)
+3) Access to Instance Terminal (via SSH) and run aws s3 ls  
+ &emsp;&emsp;    (sudo apt install awscli if its not installed)
+ 
+      
+#### STEP 3: Tutorial 3 (streamlit app access to bucket data)
+1)  pip3 install pandas \
+    pip3 install s3fs \
+    pip3 install boto3 
+2) add this lines in python code:
+ &emsp;&emsp; &emsp;&emsp; import pandas as pd
+ &emsp;&emsp; &emsp;&emsp; import boto3
+ &emsp;&emsp; &emsp;&emsp; client = boto3.client('s3')
+ &emsp;&emsp; &emsp;&emsp; path='s3://Your_bucket_name/Your_file_name'
+ &emsp;&emsp; &emsp;&emsp; df=pd.read_csv(path)
+
 
 #### S3 COMMANDS: 
 https://docs.aws.amazon.com/es_es/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-listing-buckets \
@@ -46,18 +60,6 @@ https://docs.aws.amazon.com/es_es/cli/latest/userguide/cli-services-s3-commands.
  &emsp;&emsp; create new bucket
  - aws s3 rb s3://newbucket \
   &emsp;&emsp; delete bucket or file
- 
-      
-#### STEP 3: Tutorial 3 (streamlit app access to bucket data)
-1)  pip3 install pandas \
-    pip3 install s3fs \
-    pip3 install boto3 
-2) add this lines in python code:
- &emsp;&emsp; &emsp;&emsp; import pandas as pd
- &emsp;&emsp; &emsp;&emsp; import boto3
- &emsp;&emsp; &emsp;&emsp; client = boto3.client('s3')
- &emsp;&emsp; &emsp;&emsp; path='s3://Your_bucket_name/Your_file_name'
- &emsp;&emsp; &emsp;&emsp; df=pd.read_csv(path)
 
 note: (for adding files to ec2 instance)\
 pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt 
