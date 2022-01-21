@@ -67,9 +67,9 @@ STEPS:
 
 *tmux new -s Session0* \
 *tmx detach* \
-*tmux list-sessions*   para ver todas las sessiones \
+*tmux list-sessions*   (para ver todas las sessiones) \
 *tmux attach -t Session0* \
-*tmux kill-session*    para borrar todas las sesiones 
+*tmux kill-session*    (para borrar todas las sesiones) 
       
 
 
