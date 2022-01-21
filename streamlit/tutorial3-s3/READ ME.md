@@ -29,26 +29,22 @@ STEPS:
  
 2) GO to instances, select the instance, actions, security, modify role for the one created before. 
  
-3) Access to Instance Terminal (via SSH) and aws s3 
+3) Access to Instance Terminal (via SSH) and run aws s3 ls  (sudo apt install awscli if its not installed)
+
+#### commands S3: https://docs.aws.amazon.com/es_es/cli/latest/userguide/cli-services-s3-commands.html#using-s3-commands-listing-buckets
+ - aws s3 ls
+ - aws s3 ls s3://testbucket/ \
+&emsp;&emsp;	shows with  PRE all folders in bucket 
+ - aws s3 ls s3://testbucket/testfolder/	 
+ - aws s3 cp testfile.txt s3://testbucket/testfolder/testfile.txt \
+&emsp;&emsp; copy from virtual machine in ec2 to bucket in s3
+ - aws s3 cp s3://testbucket-lanek-0/carpeta0/holi.txt holi2.txt \ 
+ &emsp;&emsp; copy from bucket to virtual machine
+ - aws s3 mb s3://newbucket  \
+ &emsp;&emsp; create new bucket
+ - aws s3 rb s3://newbucket \
+  &emsp;&emsp; delete bucket or file
  
-&emsp; Now We have the .ppk key
- 
-4) Run PuTTY
- 
-5) In Session category: \
-&emsp;&emsp;      in HOST NAME box goes  my-instance-user-name@my-instance-public-dns-name. (default instance user name is ubuntu)\
-&emsp;&emsp;      in PORT box goes 22\
-&emsp;&emsp;      in connection type SSH\
-&emsp;&emsp;      more info:  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs.html#connection-prereqs-get-info-about-instance 
- \     
-6) In Connection/SSH/Auth category:\
- &emsp;&emsp;     browse for the .ppk key and open
- 
-7) click open and we are connected to the EC2 instance (virtual machine)
- 
-8) to send file from our computer to ec2 instance, in cmd run:\
- &emsp;	pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt \
- &emsp; might need step 4     
       
 #### STEP 3: Tutorial 1 (run streamlit in the background)
 1) sudo apt-get update
