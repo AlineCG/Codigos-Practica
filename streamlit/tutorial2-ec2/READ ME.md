@@ -6,7 +6,7 @@ Tutorial 2.1: SSH Connetion for windows (use PuTTY) \
 <pre>      
 Main idea: Create a EC2 server (virtual machine) to run streamlit web app. \
       We also use TMUX library for keeping the code running in the background.
-<\pre>  
+</pre>  
 STEPS:
 
 
