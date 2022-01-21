@@ -12,21 +12,21 @@ Main idea: To Create a EC2 server (virtual machine) to run our streamlit web app
 STEPS:
 
 
-1) TUTORIAL 1 (CREATE EC2 Instance)
+# STEP 1 tutorial 1 (CREATE EC2 Instance)
 
-&emsp; 1.1) Go to AWS Console select EC2 and launch instance.
+1) Go to AWS Console select EC2 and launch instance.
  
-&emsp; 1.2) Select AMI (ubuntu 18.04 (free tier)), next until security group.
+2) Select AMI (ubuntu 18.04 (free tier)), next until security group.
  
-&emsp; 1.3) Add custom TCP with port range 8501, click review and launch
+3) Add custom TCP with port range 8501, click review and launch
  
 &emsp; 1.4) Create a new key pair, add new name and download .pem file (KEEP IN SECURE LOCATION)
  
 &emsp; 1.5) Launch instance
 
-2) Tutorial 2 (connecting with SSH to EC2)
+#STEP 2: Tutorial 2 (connecting with SSH to EC2)
 
-&emsp; 2.1) Download PuTTY
+1) Download PuTTY
  
 &emsp; 2.2) Run PuTTYgen software, select RSA and then click load, choose the .pem file click OPEN and OK.
  
@@ -56,6 +56,8 @@ STEPS:
 3.3) sudo apt-get install tmux
 3.4)tmux new -s StreamSession
 3.5)streamlit helloworld.py will be running in the StreamSession 
+3.6) ctrl+B then D (not simultaneously) now the session is detatched and we can disconnect without killing it.
+
 
 
       
