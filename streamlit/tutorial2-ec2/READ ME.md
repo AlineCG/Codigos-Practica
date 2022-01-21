@@ -71,7 +71,13 @@ STEPS:
 *tmux attach -t Session0* \
 *tmux kill-session*    (para borrar todas las sesiones) 
       
-
+#### EXTRA STEP  (connect AWS with computer)
+1) install awscli for windows
+2) run in cmd: aws configure \
+    AWS Access Key ID [None]: write private key \
+    AWS Secret Access Key [None]: write public key \
+    Default region name [None]: us-east-2 \
+    Default output format [None]: blank
 
 
   
