@@ -5,6 +5,11 @@ Tutorial 1
 Documentation
 	https://docs.streamlit.io/
 	
+<pre>      
+Main idea: To Create web apps with python using streamlit library.
+	   
+</pre>  	
+	
 STEPS: 
 
 1) pip install streamlit
