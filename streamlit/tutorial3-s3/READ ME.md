@@ -1,11 +1,11 @@
 tutorial 1 https://www.youtube.com/watch?v=XGcoeEyt2UM
-	minuto 13:50 (crear bucket)
+	minute 13:50 (create bucket)
   
 Tutorial 2 https://www.youtube.com/watch?v=NHAuCWIHevk
-       (conectar bucket con ec2)
+       (connect bucket with ec2)
        
-https://www.data-stats.com/how-to-read-s3-files-from-ec2-using-python/
-	paso 5 y 6 para conectar s3 con python 
+Tutorial 3 https://www.data-stats.com/how-to-read-s3-files-from-ec2-using-python/
+	steps 5 y 6 to connect s3 with python 
 
 
 <pre>      
