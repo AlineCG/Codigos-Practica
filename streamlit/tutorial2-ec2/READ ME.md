@@ -41,15 +41,13 @@ STEPS:
 &emsp;&emsp;      in PORT box goes 22\
 &emsp;&emsp;      in connection type SSH\
 &emsp;&emsp;      more info:  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs.html#connection-prereqs-get-info-about-instance \
-      
- &emsp; 2.6)In Connection/SSH/Auth category:
- 
+ \     
+ &emsp; 2.6)In Connection/SSH/Auth category:\
  &emsp;&emsp;     browse for the .ppk key and open
  
  &emsp; 2.7) click open and we are connected to the EC2 instance (virtual machine)
  
- &emsp; 2.8) to send file from our computer to ec2 instance, in cmd run:
- 
+ &emsp; 2.8) to send file from our computer to ec2 instance, in cmd run:\
  &emsp;&emsp; 	pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt
       
       
