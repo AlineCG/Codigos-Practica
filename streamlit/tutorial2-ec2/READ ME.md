@@ -63,7 +63,13 @@ STEPS:
 
 6) ctrl+B then D (not simultaneously) now the session is detatched and we can disconnect without killing it.
 
+#### TMUX COMMANDS 
 
+tmux new -s Session0 \
+tmx detach \
+tmux list-sessions para ver todas las sessiones \
+tmux attach -t Session0 \
+tmux kill-session para borrar todas las sesiones \
       
 
 
