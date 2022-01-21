@@ -17,25 +17,19 @@ Main idea: To Create a bucket in S3 and run our streamlit web app in EC2
 STEPS:
 
 
-#### STEP 1: Tutorial 1 (CREATE EC2 Instance)
+#### STEP 1: Tutorial 1 (CREATE S3 Bucket)
 
-1) Go to AWS Console select EC2 and launch instance.
+1) Go to AWS Console select S3 and create bucket.
  
-2) Select AMI (ubuntu 18.04 (free tier)), next until security group.
- 
-3) Add custom TCP with port range 8501, click review and launch
- 
-4) Create a new key pair, add new name and download .pem file (KEEP IN SECURE LOCATION)
- 
-5) Launch instance
+2) Create name for the bucket that is unique in all internet then click create
 
-#### STEP 2: Tutorial 2 (connecting with SSH to EC2)
+#### STEP 2: Tutorial 2 (connecting S3 to EC2)
 
-1) Download PuTTY
+1) Go to IAM, create a new role for EC2, policy: S3FullAccess.
  
-2) Run PuTTYgen software, select RSA and then click load, choose the .pem file click OPEN and OK.
+2) GO to instances, select the instance, actions, security, modify role for the one created before. 
  
-3) click Save Private Key, yes, add new name and Save.
+3) Access to Instance Terminal (via SSH) and aws s3 
  
 &emsp; Now We have the .ppk key
  
