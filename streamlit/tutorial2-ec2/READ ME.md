@@ -51,13 +51,17 @@ STEPS:
  &emsp;&emsp; 	pscp -i C:\path\my-key-pair.ppk C:\path\Sample_file.txt my-instance-user-name@my-instance-public-dns-name:/home/my-instance-user-name/Sample_file.txt
       
 #### STEP 3: TUTORIAL 1 (run streamlit in the background)
-1) sudo apt-get update\
-2) pip install streamlit and run: streamlit helloworld.py\
-3) sudo apt-get install tmux\
-4) tmux new -s StreamSession\
-5) streamlit helloworld.py will be running in the StreamSession\ 
-6) ctrl+B then D (not simultaneously) now the session is detatched and we can disconnect without killing it.\
+1) sudo apt-get update
 
+2) pip install streamlit and run: streamlit helloworld.py
+
+3) sudo apt-get install tmux
+
+4) tmux new -s StreamSession
+
+5) streamlit helloworld.py will be running in the StreamSession
+
+6) ctrl+B then D (not simultaneously) now the session is detatched and we can disconnect without killing it.
 
 
       
