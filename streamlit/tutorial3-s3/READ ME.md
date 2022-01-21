@@ -45,6 +45,8 @@ STEPS:
  &emsp;&emsp; &emsp;&emsp; client = boto3.client('s3') \
  &emsp;&emsp; &emsp;&emsp; path='s3://Your_bucket_name/Your_file_name' \
  &emsp;&emsp; &emsp;&emsp; df=pd.read_csv(path) 
+ 
+ 3) python run example.py (Ex: streamlit run helloworlds3.py)
 
 
 #### S3 COMMANDS: 
