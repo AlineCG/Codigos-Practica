@@ -55,9 +55,9 @@ note: In Connection category: Seconds between keepalives field goes 180\
  &emsp; might need step 4     
       
 #### STEP 3: Tutorial 1 (run streamlit in the background)
-1) sudo apt-get update
+1) sudo apt-get update then sudo apt install python3-pip
 
-2) pip install streamlit and run: streamlit helloworld.py
+2) pip3 install streamlit and run: streamlit helloworld.py
 
 3) sudo apt-get install tmux
 
