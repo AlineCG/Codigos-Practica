@@ -45,6 +45,8 @@ STEPS:
 6) In Connection/SSH/Auth category:\
  &emsp;&emsp;     browse for the .ppk key and open
  
+7.0) In Connection category: Seconds between keepalives field goes 180 \ also, save the session in Session category with a name
+ 
 7) click open and we are connected to the EC2 instance (virtual machine)
  
 8) to send file from our computer to ec2 instance, in cmd run:\
