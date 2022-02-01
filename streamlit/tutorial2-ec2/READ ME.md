@@ -55,17 +55,22 @@ note: In Connection category: Seconds between keepalives field goes 180\
  &emsp; might need step 4     
       
 #### STEP 3: Tutorial 1 (run streamlit in the background)
+
 1) sudo apt-get update then sudo apt install python3-pip
+2) wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
+3) bash ~/miniconda.sh -b -p ~/miniconda
+4) echo "PATH=$PATH:$HOME/miniconda/bin" >> ~/.bashrc
+5) source ~/.bashrc
 
-2) pip3 install streamlit and run: streamlit helloworld.py
+6) pip3 install streamlit and run: streamlit helloworld.py
 
-3) sudo apt-get install tmux
+7) sudo apt-get install tmux
 
-4) tmux new -s StreamSession
+8) tmux new -s StreamSession
 
-5) streamlit helloworld.py will be running in the StreamSession
+9) streamlit helloworld.py will be running in the StreamSession
 
-6) ctrl+B then D (not simultaneously) now the session is detatched and we can disconnect without killing it.
+10) ctrl+B then D (not simultaneously) now the session is detatched and we can disconnect without killing it.
 
 #### TMUX COMMANDS 
 
