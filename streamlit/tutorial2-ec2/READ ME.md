@@ -56,7 +56,7 @@ note: In Connection category: Seconds between keepalives field goes 180\
       
 #### STEP 3: Tutorial 1 (run streamlit in the background)
 
-1) sudo apt-get update then sudo apt install python3-pip
+1) sudo apt-get update 
 2) wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda.sh
 3) bash ~/miniconda.sh -b -p ~/miniconda
 4) echo "PATH=$PATH:$HOME/miniconda/bin" >> ~/.bashrc
