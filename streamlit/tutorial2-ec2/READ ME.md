@@ -75,18 +75,20 @@ note: In Connection category: Seconds between keepalives field goes 180\
 #### TMUX COMMANDS 
 
 *tmux new -s Session0* \
-*tmx detach* \
+*tmux detach* \
 *tmux list-sessions*   (para ver todas las sessiones) \
 *tmux attach -t Session0* \
 *tmux kill-session*    (para borrar todas las sesiones) 
       
-#### STEP 4: (optional)  (connect AWS with computer)
+#### STEP 4: (optional)  (connect AWS with computer to send files)
 1) install awscli for windows
 2) run in cmd: aws configure \
     AWS Access Key ID [None]: write private key \
     AWS Secret Access Key [None]: write public key \
     Default region name [None]: us-east-2 \
     Default output format [None]: blank
+    
+
 
 
   
