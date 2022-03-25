@@ -1,0 +1,5 @@
+nueva instancia: i-08da945fced18b7c7
+
+clave: streamlitv2
+
+dns publica:ec2-50-16-106-236.compute-1.amazonaws.com
