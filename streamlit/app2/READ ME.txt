@@ -1,0 +1,21 @@
+nueva instancia se llama:
+i-0fad82c84e3583ff5
+zona:
+us-east-1a
+clave:
+streamlitv2.pem
+
+v2)
+ubuntu@ec2-3-83-116-71.compute-1.amazonaws.com
+
+url:     http://3.83.116.71:8501  -> app B revisar examen
+
+v3)
+ubuntu@ec2-3-92-65-169.compute-1.amazonaws.com
+
+url:	 http://3.92.65.169:8501  -> APP A subir examen
+
+v4)
+ec2-54-172-174-220.compute-1.amazonaws.com  ->APP B denuevo
+
+url: 	http://54.172.174.220:8501/
