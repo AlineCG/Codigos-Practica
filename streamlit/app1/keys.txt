@@ -1,5 +1,0 @@
-AWS access key id: AKIA3J4RTNRKWFDG4AW5
-
-AWS Secret access key: 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
-
-region us-east-2
