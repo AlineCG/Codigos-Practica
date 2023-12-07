@@ -72,7 +72,7 @@ note: In Connection category: Seconds between keepalives field goes 180\
 
 10) ctrl+B then D (not simultaneously) now the session is detatched and we can disconnect without killing it.
 
-#### TMUX COMMANDS 
+#### TMUX COMMANDS (TMUX allows us to run programs on the background, detatched from the session)
 
 *tmux new -s Session0* \
 *tmux detach* \
